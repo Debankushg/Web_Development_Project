@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="A/cho.ico" type="image/x-icon">
+    <title>SignUp</title>
+<style>
+    body{font-family:Georgia, 'Times New Roman', Times, serif;
+    background: linear-gradient(300deg,#f736cd,#e7a516);
+    height: 100vh; overflow: hidden; 
+    align-items:center;justify-content: center; 
+    padding: 10px; }
+    
+    button{background-color: rgb(32, 1, 79); 
+        color:white; padding:10px 20px; 
+        margin: 8px 0;border:none; cursor: pointer; 
+        width:100%; border:1px solid silver;
+        border-radius: 25px; font-size: 18px; }
+    
+    button:hover{opacity: 0.8;
+    }
+    tt{text-align:center;  margin: 24px 0 12px 0;
+        position: relative;
+    }
+    img.avtar{ width: 80px; border-radius: 50%;}
+
+    .center{position:relative; 
+        top:0; left: 50%;bottom:10%; 
+        transform:translate(-50%);
+        max-width:600px;
+         width:100%;
+         background:url(a/36.jpg) no-repeat center center fixed; 
+         background-size: cover;
+         border-radius: 10px;
+          padding: 25px 30px;
+      }
+
+.center h1{text-align: center; 
+            padding: 0 0 0 0; 
+            border-bottom: 2px solid silver;
+         color:darkblue;
+        font-family:sans-serif;
+        font-weight:bolder;}
+
+ .user-details{display:flex;
+                padding: 0 40px; 
+                box-sizing: border-box; 
+                flex-wrap: wrap; 
+                justify-content: space-between; 
+                margin: 20px 0 12px 0;
+}
+.input-box{width: calc(100% /2 - 20px); }
+.input-box input{height: 45px; 
+                width: 100%;
+                outline: none; 
+                border-radius: 5px;
+                border: 1px solid #ccc; 
+                padding-left: 15px; 
+                font-size: 16px;
+                border-bottom-width: 2px;
+                transition: all 0.3 ease; }
+
+.text_field{position: relative; 
+            margin:30px 0;}
+
+.text_field input{ width: 100%; 
+                    padding:0 5px; 
+                    height: 40px; 
+                    font-size:16px; 
+                    border:none; 
+                    background:none; 
+                    outline:none; }
+                     
+.details{font-weight: 500; 
+        margin-bottom:10px; 
+        display: block;
+        color:darkblue;
+        font-weight:bold;}
+
+.input-box input:focus,
+.input-box input:valid{border-color: #9b59b6;}
+
+.title{font-size: 16px; 
+    font-weight: 500;
+    display: block;
+    margin-bottom: 5px;}
+
+
+button{background-color: rgb(32, 1, 79);
+     color:white; padding:10px 20px; 
+     margin: 8px 0;
+     border:none;
+     cursor: pointer; 
+     width:100%; 
+     border:1px solid silver;
+     border-radius: 10px; 
+     font-size: 18px; }
+    
+
+
+</style>
+    
+</head>
+<body>
+<div class="center">
+    <h1>SIGN-UP FOR FREE
+    <div class="tt">
+       <center> <img src="A/77.jpg" alt="login logo" class="avtar"></center>
+    </div></h1>
+<form method="post"> 
+    <div class= "user-details">
+        <div class="input-box">
+            <span class="details">First name</span>
+            <input type="text" placeholder="Enter Your First name">
+        </div>
+        <div class="input-box">
+            <span class="details">Last Name</span>
+            <input type="text" placeholder="Enter Your Last Name">
+        </div><div class="input-box">
+            <span class="details">Email</span>
+            <input type="text" placeholder="Enter Your Email">
+        </div><div class="input-box">
+            <span class="details">Mobile No</span>
+            <input type="text" placeholder="Enter Your Mobile No">
+        </div>
+        <div class="input-box">
+            <span class="details">Password</span>
+            <input type="text" placeholder="Enter Your Password">
+        </div>
+        <div class="input-box">
+            <span class="details">Confirm Password</span>
+            <input type="text" placeholder="Enter Your Confirm Password">
+        </div>
+    </div>
+    <div class="user-details">
+        <div class="input-box">
+        <span class="details"> Gender </span>
+           <select name="gen" id="gen">
+            <option value="no">--SELECT YOUR GENDER DETAILS-- </option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="others">Others</option>
+           </select>
+        </div>
+        <div class="input-box">
+            <span class="details">Address </span>
+            <input type="text" placeholder="Enter Your Address">
+        </div>
+        
+            <button> ✔SIGNUP</button>
+        
+    </div>
+
+</form>
+</div>
+</body>
+</html>

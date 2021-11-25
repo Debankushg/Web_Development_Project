@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="A/cho.ico" type="image/x-icon">
+    <title>login</title>
+<style>
+    body{font-family:Georgia, 'Times New Roman', Times, serif;background: linear-gradient(300deg,#36a9f7,#8e44ad); height: 100vh; overflow: hidden; }
+    
+    button{background-color: rgb(32, 1, 79); color:white; padding:10px 20px; margin: 8px 0;
+        border:none; cursor: pointer; width:100%; border:1px solid silver;border-radius: 25px; font-size: 18px; }
+    
+    button:hover{opacity: 0.8;
+    }
+    tt{text-align:center;  margin: 24px 0 12px 0;
+        position: relative;
+    }
+    img.avtar{ width: 80px; border-radius: 50%;}
+.center{position:absolute; top:10%; left: 50%;bottom:10%; transform:translate(-50%); width: 400px;background: white; border-radius: 10px;
+}
+.center h1{text-align: center; padding: 0 0 0 0; border-bottom: 2px solid silver;}
+.center form{padding: 0 40px; box-sizing: border-box;
+}
+.text_field{position: relative; border-bottom:2px solid #adadad; margin:30px 0;}
+.text_field input{ width: 100%; padding:0 5px; height: 40px; font-size:16px; border:none; background:none; outline:none;}
+
+.pass{margin:10px; text-align: center; font-size:16px;}
+.pass a{color:slateblue;text-decoration: none;}
+
+.SignUp{margin:10px; text-align: center; font-size: 16px; color:#666666;font-weight: bold;}
+.SignUp a{color:#2691d9; text-decoration: none;}
+
+
+
+
+</style>
+    
+</head>
+<body>
+<div class="center">
+    <h1>LOG-IN
+    <div class="tt">
+       <center> <img src="A/77.jpg" alt="login logo" class="avtar"></center>
+    </div></h1>
+<form method="post"> 
+    <div class="text_field">
+        <label for="loginid">Email</label><br>
+            <input type="text" placeholder="Email">
+            <br>
+    </div>
+    <div class="text_field">
+        <label for="loginid">Password </label><br>
+            <input type="password" placeholder="password">
+            <br>
+    </div>
+    <div>
+            <input type="checkbox"> Remember me <br>
+            <button>Log In</button>
+    </div>
+
+    <div class="pass">
+        <label>
+         <p><a href="forgetpassword.html">Forget Password?</a></p>
+        </label>
+    </div>
+    <div class="SignUp">
+        <label for="no account">
+          <p>No account <a href="SignUp.html">Sign Up </a></p>
+        </label>
+    </div>
+    </form>
+ </div>
+</body>
+</html>
