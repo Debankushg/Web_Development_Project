@@ -1,0 +1,63 @@
+//- index.pug
+doctype html
+html
+  head
+    title Dev Dance Academy
+    style
+      include ../static/style.css
+  body
+    nav#navbar 
+        ul  
+            div#logo
+                img(src="/static/img/9.png")
+                |DDA 
+            li #[a(href="/") Home ]
+            li #[a(href="/") About ]
+            li #[a(href="/") Services ]
+            li #[a(href="/") Class Info]
+            li #[a(href="/") ContactUs]
+            
+    Section#introSection  
+        div Welcome to Dev's Dance Academy
+        div.small Live the Dance
+
+    Section#OurMission 
+        h2 Our Mission
+        div.card 
+            h3 Dance Perfection
+            div.card-box
+                div.card-img
+                    img(src="/static/img/1.png")
+                div.card-content
+                    p  This is the best dance academy
+        div.card 
+            h3 Dance the way you like
+            div.card-box
+                div.card-img
+                    img(src="/static/img/2.jpg")
+                div.card-content
+                    p  This is the best dance academy
+        div.card 
+            h3 Expert Teaching
+            div.card-box
+                div.card-img
+                    img(src="/static/img/8.png")
+                div.card-content
+                    p  This is the best dance academy
+
+
+
+
+    Section#sponsorsSection      
+        h2 Our sponsors
+        div#sponsors
+            img(src="/static/img/3.png", alt="sponsor logo" class="spimg")
+            img(src="/static/img/4.png", alt="sponsor logo" class="spimg")
+            img(src="/static/img/7.png", alt="sponsor logo" class="spimg")
+            img(src="/static/img/44.png", alt="sponsor logo" class="spimg")
+
+    footer#footer
+        | &copy All Right Reserved 2022  | DevDanceAcademy.com
+    script
+      include ../static/index.js
+
