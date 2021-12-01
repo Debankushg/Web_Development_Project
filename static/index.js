@@ -1,0 +1,1 @@
+db.items.insertOne({name:"Samsung 90s" , Price:22000 , rating: 4.2 , qty:298 , sold: 106})
