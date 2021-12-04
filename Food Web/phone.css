@@ -23,36 +23,85 @@
 }
 
 .p{font-size: 13px;
-
 }
-
-.h1-primary{
+.btn1{
+    font-size: 16px;
+}
+.h-primary{
     font-size: 26px;
 
 }
 /* SERVICES */
 #services{
     flex-direction:column;
+    margin: 200px  20px 0px  20px ;
+    justify-content: center;
+    align-items: center;
+    height: 550px;
+}
+#service-container{
+    height: 900px;
+}
+.box{
+    display: flex;
+    flex-direction: column;
+    padding: 14px 30px 0px 20px;
+    margin: 20px 50px 10px 50px;
+    width: 60%;
+    
+    text-align: center;
+
+    }
+.box img{
+    flex-wrap: wrap;
+    width: 100px;
+    height: 100px;
+    padding: 10px 10px 0px 30px;
+    margin:0px 50px 10px 50px ;
+    justify-content:middle;
+    align-items: middle;
+    text-align: center;
+}
+.h-secondary-center{
+    margin: 0px 0px 0px 0px;
+    padding: 0px 40px;
+}
+.center{
+    margin: 0px 0px 70px 0px;
+}
+.h-primary2{
+    font-size: 25px;
 }
 
-.box{
-    padding: 14px;
-    margin: 2px 0px;
-    margin-bottom: 20px;
-}
 
 /* CLIENT */
+#client{
+    height:300px ;
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px  120px  0px;
+}
 #clients{
     flex-wrap: wrap;
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px  0px  0px;
 }
-
+.items{
+    margin: 0;
+    padding: 0 10px 0 0px ;
+}
 #clients img{
     
-    height: auto;
-    width: 40px;
-    padding: 6px;
+    height:50px;
+    width: 60px;
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 10px 0px;
 }
-
+.h-primary1{
+    font-size: 25px;
+    text-align: center;
+    padding: 10px 0px 0px 100px;
+    /* margin: 0px 0px 0px 0px;
+} */
 
 /* CONTACT US */
 #contact-box form{

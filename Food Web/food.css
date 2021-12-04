@@ -79,7 +79,7 @@ ul li a:hover{
     background:url(b/13.jpg) no-repeat center center/cover;
     top: 0px;
     left: 0px;
-    height: 75%;
+    height: 78%;
     width: 100%;
     z-index: -1;
     opacity: 0.9;
@@ -162,19 +162,23 @@ h1{
     height: 20px;
 }
 
-.h-secondary{
+.h-secondary-center{
     font-size: 1.3rem;
     padding: 12px;
     font-family: 'Bree Serif', serif;
+    text-align: center;
 }
 
 #services{
-    margin: 70px;
+    margin: 20px 0px 0px 0px;
     display: flex;
+    height: 350px;
+   
+
 }
 .box{
     border: 2px solid brown;
-    margin: -50px 10px;
+    margin: 20px 40px 0px 20px;
     padding: 34px;
     border-radius: 25px;
     background-color: rgb(221, 220, 220);
@@ -182,7 +186,7 @@ h1{
 }
 .box img{
     height: 140px;
-    display: block;
+    display: flex;
     margin: auto;
 }
 .box p{
@@ -191,14 +195,14 @@ h1{
 
 #client{
     /* position: relative; */
-    height: 333px;
+    height:400px;
 }
 #client::before{
     content: " ";
     position: absolute;
     background: url(b/11.jpg) center center/cover;
     width: 100%;
-    height: 65%;
+    height: 75%;
     z-index: -1;
     opacity: 0.4;
 }
@@ -218,6 +222,7 @@ footer{
 
 #clients img{
     height: 100px;
+    display: flex;
 
 }
 .item{
