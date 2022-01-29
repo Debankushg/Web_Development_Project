@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<div class="center">
+    <h1>LOG-IN
+    </h1>
+    <form method="post">
+        <div class="text_field">
+            <label for="loginid">Email</label><br>
+            <input type="text" placeholder="Email" id="username">
+            <br>
+        </div>
+        <div class="text_field">
+            <label for="loginid">Password </label><br>
+            <input type="password" placeholder="password" id="password">
+            <br>
+        </div>
+        <div>
+           <button onclick="validate()">Log In</button>
+           <span class="indi"></span>
+        </div>
+
+        <div class="pass">
+            <label>
+                <p><a href="forgetpassword.html">Forget Password?</a></p>
+            </label>
+        </div>
+        <div class="SignUp">
+            <label for="no account">
+                <p>No account <a href="SignUp.html">Sign Up </a></p>
+            </label>
+        </div>
+    </form>
+</div>
+
+
+
+
+
+
+<script>
+
+function validate(){
+    const username = document.getElementById('username').value;
+    const password = document.getElementById('password').value;
+    const patern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/ 
+    const pasPatern = /[A-Za-z !@#\$%\^_&\*]{7,15}$/
+
+
+    // const lowerCase = new RegExp('(?=.*[a-z])');
+    // const upperCase = new RegExp('(?=.*[A-Z])');
+    // const specialChar = new RegExp('(?=.*[!@#\$%\^&\*])');
+    // const sevenChar = new RegExp ('(?=.{7,})');
+
+
+
+if ((username.match(patern)) && (password.match(pasPatern)))
+{
+  window.location.href ="welcome.html";
+  alert('Login Successful');
+}
+else{
+    alert('login Failed');
+}
+
+}
+</script>
+</body>
+</html>
